@@ -6,7 +6,7 @@ function fibonacciSeries(fab : number): number[]{
     let series: number[] = [0, 1];
 
     for(let i=2; i<fab; i++){
-        series[i] = (series[i-1] ?? 0) + (series[i-2] ?? 0);
+        series[i] = (series[i-1]!) + (series[i-2]!);
     }
     return series;
 
